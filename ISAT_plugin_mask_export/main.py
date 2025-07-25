@@ -30,13 +30,25 @@ class MaskExportPlugin(PluginBase):
         self.enabled = False
 
     def get_plugin_author(self) -> str:
-        return "yatengLG"
+        try:
+            from ISAT_plugin_mask_export import __author__
+        except Exception as e:
+            __author__ = "unknown"
+        return __author__
 
     def get_plugin_version(self) -> str:
-        return "1.0.0"
+        try:
+            from ISAT_plugin_mask_export import __version__
+        except Exception as e:
+            __version__ = "unknown"
+        return __version__
 
     def get_plugin_description(self) -> str:
-        return "Export mask."
+        try:
+            from ISAT_plugin_mask_export import __description__
+        except Exception as e:
+            __description__ = "unknown"
+        return __description__
 
     def after_image_open_event(self):
         self.update_image_mask()
