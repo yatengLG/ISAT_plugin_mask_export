@@ -1,5 +1,8 @@
 # ISAT插件 - mask导出
 
+<a href='https://pypi.org/project/isat-plugin-mask_export/' target="_blank"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/isat-plugin-mask_export"></a>
+<a href='https://pypi.org/project/isat-plugin-mask_export/' target="_blank"><img alt="Pepy Total Downlods" src="https://img.shields.io/pepy/dt/isat-plugin-mask_export"></a>
+
 这是一个[ISAT](https://github.com/yatengLG/ISAT_with_segment_anything)的插件开发示例。
 
 仅使用157行代码，开发一个带界面的ISAT插件，使ISAT支持mask导出功能。
