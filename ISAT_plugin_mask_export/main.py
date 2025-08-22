@@ -153,8 +153,8 @@ class MaskExportPlugin(PluginBase):
                            self.image_mask.height() / pixmap.height(),
                            )
         pixmap = pixmap.scaled(
-            pixmap.width() * scale_factor,
-            pixmap.height() * scale_factor,
+            int(pixmap.width() * scale_factor),
+            int(pixmap.height() * scale_factor),
             QtCore.Qt.AspectRatioMode.KeepAspectRatio,
             QtCore.Qt.TransformationMode.FastTransformation
         )
